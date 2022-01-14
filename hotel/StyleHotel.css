@@ -1,0 +1,444 @@
+:root{
+    --fuenteheading:'Roboto Mono', monospace;
+    --fuenteParrafos:'Roboto Mono', monospace;
+
+    --primario: #000000;
+    --secundario: #ffffff;
+    --terciario: #03a165;
+}
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+
+/* fin Fuentes */
+
+/* Globales */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /* 1rem=10px*/
+    font-family: var(--fuenteheading);
+    padding: 0;
+    margin: 0;
+}
+*,*:before,*::after{
+    box-sizing:inherit ;
+}
+video{
+    width: 100%;
+}
+ul,ol{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    
+}
+
+/* Fin Globales */
+
+
+/* MEDIA QUIERY */
+
+
+/* EXTRA SMALL/TELEFONOS  */
+@media (min-width:320px ) {
+    .primervideo__p{
+        font-family: var(--fuenteParrafos);
+        position: absolute;
+        left: 1;
+        margin: 0 auto;
+        font-size: 1rem;
+        top: 33rem;
+        color: blue;
+    
+    }
+}
+/* small */
+@media (min-width:600px ) {
+    .primervideo__p{
+        font-family: var(--fuenteParrafos);
+        position: absolute;
+        left: 1;
+        margin: 0 auto;
+        font-size: 3.5rem;
+        bottom: -2rem;
+        color: blue;
+    }
+}
+ 
+/* MEDIUM */
+@media (min-width:768px ) {
+    .primervideo__p{
+        color: rebeccapurple;
+    }
+    }
+ 
+
+
+/* large/LAPTOP Y DESKTOP */
+@media (min-width:992px ) {
+    .primervideo__p{
+        color: rebeccapurple;
+    }
+    }
+ 
+/* Extra Large */
+@media (max-width:1200px ) {
+    .primervideo__p{
+        font-family: var(--fuenteParrafos);
+        position: absolute;
+        left: 1;
+        margin: 0 auto;
+        font-size: 3.5rem;
+        bottom: -2rem;
+        color: blue; 
+        top: 82rem;
+    }
+   
+
+}
+ 
+/* FIN MEDIA QUIERY */
+
+
+   /*Inicio header  */
+.header{
+    height: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--terciario);
+    padding: 2rem;
+}
+.header__titulo{
+    display: flex;
+    justify-content: right;
+padding: 10px;
+font-size: 5rem;
+
+}
+.header__boton{
+   background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+
+
+}
+.header__boton--link{
+    display: flex;
+    text-decoration: none;
+    font-family: var(--fuenteParrafos);
+    font-size: 2.2rem;
+    color: var(--primario);
+    
+    
+
+}
+
+.header__icon{
+    border-radius: 50%;
+    align-items: center;
+    padding: 20;
+    color: black;
+    object-fit:cover ;
+
+}
+    /*Fin Inicio header  */
+
+    /* primer video incio */
+    
+.primervideo__p{
+   
+    position: relative;
+    z-index: 1;
+    right: initial;
+    font-size: 2rem;
+    color: var(--secundario);
+    align-items: center;
+    bottom: 10rem;
+    right: -1rem;
+    top: -6rem;
+    font-size: 3rem
+    
+
+}
+
+
+
+    /* fin primer video */
+
+    /* inicio ofertas */
+    .parent {
+        background-image : url(media/img/atlas.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--terciario);
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 4fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1 { grid-area: 1 / 2 / 2 / 3; }
+        .div2 { grid-area: 2 / 4 / 3 / 5; }
+        .div3 { grid-area: 3 / 2 / 4 / 3; }
+        .div4 { grid-area: 4 / 4 / 5 / 5; }
+        
+
+.ofertas{
+   margin-bottom: -33rem;
+
+}
+.p-fade{
+    font-family: var(--fuenteParrafos);
+    font-size: 2rem;
+    padding-top: 1rem; 
+    color: var(--primario); 
+    font-weight: bold;
+    
+}
+.inicio-sesion{
+    text-align: center;
+    color: var(--primario);
+    font-size: 4rem;
+}
+    /* fin ofertas */
+
+/* restaurante inicio */
+
+.restaurante{
+    background-color: var(--primario);
+
+}
+.restaurante__galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+
+
+}
+.restaurante__galeria--img{
+    width: 100%;
+    border-radius:initial;
+    object-fit: cover;
+    padding: 2rem ;
+    
+}
+/*MEDIAQ POSITION RELATIVE */
+
+@media (min-width:300px){
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -1rem;
+    font-size: 1rem;
+    top: -21rem;
+    }
+}
+@media (min-width:400px){
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -1rem;
+    font-size: 1rem;
+    top: -25rem;
+    }
+}
+
+@media (min-width:600px ) {
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -1rem;
+    font-size: 1rem;
+    top: -68rem;
+    }
+}
+@media (min-width:768px){
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -1rem;
+    font-size: 2rem;
+    top: -54rem;
+    }
+}
+@media (min-width:1000px ) {
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -1rem;
+    font-size: 3rem;
+    top: -68rem;
+    }
+   
+}
+@media (min-width:1300px ) {
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -1rem;
+    font-size: 3rem;
+    top: -94rem;
+    }
+}
+@media (min-width:1499px){
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -1rem;
+    font-size: 3rem;
+    top: -94rem;
+    }
+}
+@media (min-width:2000px){
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -11rem;
+    font-size: 4rem;
+    top: -150rem;
+}
+}
+@media (min-width:2500px){
+    .restaurante__p{
+        color: var(--secundario);
+        position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    bottom: 10rem;
+    right: -11rem;
+    font-size: 4rem;
+    top: -167rem;    
+}
+}
+/* FIN MEDIAQ POSITION RELATIVE */
+ /* fin restaurante inicio */
+
+        /* inicio segundo video */
+  
+.fuera-del-hotel{
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--fuenteParrafos);
+}        
+
+.fuera-del-hotel__p{
+    position: relative;
+    z-index: 1;
+    right: initial;
+    font-size: 2rem;
+    color:var(--secundario);
+    align-items: center;
+    bottom: 10rem;
+    right: 10rem;
+    font-size: 2rem;
+
+}
+    /*fin segundo video */
+
+
+    /* inicio conoce-casino */
+    .conoce-casino{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: var(--primario);
+        padding: 1rem;
+    }
+    .conoce-casino__h2{
+        font-size: 3rem;
+        color: var(--primario);
+        text-align: center;
+        padding-bottom: 2.5rem;
+    }
+    .conoce-casino__h4{
+        font-size: 2.5rem;
+        text-decoration: none;
+        display: block;
+      text-align: center;
+        color: var(--primario);
+        
+    }
+    .conoce-casino__botton{
+
+        border: none;
+        text-decoration: none;
+        justify-content: center;
+        font-size: 2.2rem;
+        padding: 0 0 1rem 0;
+       
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+        
+    }
+    .conoce-casino__contenedorboton{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* fin conoce-casino */
+
+
+    /* Footer inicio */
+    .footer{
+        background-color: var(--terciario);
+        margin-top: 4rem;
+    }
+    .footer__nav{
+      display: flex;
+      justify-content: right;
+
+    }
+    .footer__ul{
+        list-style: none;
+        font-size: 2rem;
+        padding: 1rem;
+        text-decoration: none;
+    }
+    .footer__social{
+       display: flex;
+       justify-content: left;
+       list-style: none;
+
+    }
+    .footer__social--ul{
+       width: 20%;
+       
+    }
+    .derechos-Enzo{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    /* Footer fin */

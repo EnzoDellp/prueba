@@ -1,0 +1,167 @@
+:root{
+    --fuenteheading: 'Ubuntu', sans-serif;
+    --fuenteParrafos: 'Ubuntu', sans-serif;
+
+    --primario: #000000;
+    --secundario: #ffffff;
+    --terciario: #bb7710bd;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* globales */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /* 1rem=10px*/
+    font-family: var(--fuenteheading);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*,*:before,*::after{
+    box-sizing:inherit ;
+}
+video{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+
+}
+img{
+    width: 100%;
+}
+
+/* fin Globales */
+/* Header+ */
+.header{
+    display: flex;
+
+    border:0.5rem solid rgba(185, 6, 6, 0.692);
+}
+.titulo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-left: 30.5rem;
+    font-size: 5rem;
+    font-family: var(--fuenteheading);
+   
+    
+}
+.header_p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25rem;
+    font-size: 2rem;
+    font-family: var(--fuenteParrafos);
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+.header__logo{
+    width: 10%;
+    justify-content: left;
+}
+/* fin header */
+.nav{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+/* nav inicio */
+.nav__ul{
+    padding-top: 5rem;
+    text-decoration: none;
+    font-family: var(--fuenteParrafos);
+    font-size: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* nav fin */
+    /* grid inicio */
+.grid-conteiner{
+    display: grid;
+grid-template-columns: repeat(4, 2fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+gap: 1rem 1rem;
+width: 90%;
+justify-items: center;
+margin-left: 5rem; 
+margin: 12rem auto;
+margin-bottom: 0;
+  
+}
+.gird-animation{
+    transition: all 1s;
+}
+.gird-animation:hover{
+    transform: scale(1.2);
+}
+.grid__p{
+font-size: 2.8rem;
+font-family: var(--fuenteheading);
+color:var(--terciario);
+position: relative;
+z-index: 1;
+text-align: center;
+left: 65rem;
+bottom: 70rem;
+border: ghostwhite solid ;
+
+}
+     /* grid fin */
+
+
+/*inicio deportes */
+.deportes-header{
+    font-size: 2.8rem;
+font-family: var(--fuenteheading);
+color:var(--secundario);
+position: relative;
+z-index: 1;
+top: 103rem;
+}
+/* fin Deportes */
+/* info Deportes */
+.info-contenedor__p{
+    font-size: 2rem;
+    font-family: var(--fuenteParrafos);
+    text-align: left;
+}
+/* fin Info deportes */
+.p-footer{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    font-size: 2rem;
+    color: red;
+
+ 
+    top: 15rem;
+ 
+}
+@media (max-width: 768px) {
+    .p-footer{
+        color: blue;
+        position: absolute;
+        z-index: 1;
+        left: 4rem;
+        top: 50rem;
+        bottom: 15rem;
+    }
+}
